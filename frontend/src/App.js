@@ -1,12 +1,14 @@
 import React from 'react'
+import Home from './components/Home'
 
-function App() {
+const headerStyle = {
+  fontSize: '30px',
+  color: 'green'
+}
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Learn Machine Learning without Code</h1>
-      </header>
-    </div>
+    <Home />
   );
 }
 
