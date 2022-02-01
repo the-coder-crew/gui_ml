@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import Home from './components/Home'
 import Contents from './components/Contents'
+import Upload from './components/Upload'
 
 import { Container } from 'react-bootstrap'
 
@@ -11,8 +12,9 @@ const App = () => {
     <Container>
       <Router>
         <Routes>
+          <Route path='/' element={ <Home /> } />  
           <Route path='/content' element={ <Contents /> } />
-          <Route path='/' element={ <Home /> } />
+          <Route path='/upload' element={ <Upload /> } />
         </Routes>
       </Router>
     </Container>

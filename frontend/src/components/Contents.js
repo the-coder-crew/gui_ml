@@ -1,13 +1,35 @@
 import React from 'react'
 import HeaderLayout from './HeaderLayout'
+import { useNavigate } from 'react-router-dom'
+import styled from 'styled-components'
+
+const Button = styled.button`
+    background: #6eaffd;
+    border: none;
+    border-radius: '30%';
+    width: 25%;
+    margin: 1.5em auto;
+    display: flex;
+`
+
+const P = styled.p`
+    color: white;
+    font-size: 1.5em;
+    width: 60%;
+    margin: 0.4em auto;
+`
 
 const Contents = () => {
+    const navigate = useNavigate()
+
 
     return (
         <HeaderLayout title="Contents">
-            <ul>
-                <li>Simple Linear Regression</li>
-            </ul>
+           
+                <Button onClick={() => navigate('/upload')}>
+                <P>Simple Linear Regression</P>
+                </Button>
+            
         </HeaderLayout>
     )
 }
