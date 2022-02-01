@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderLayout from './HeaderLayout'
+import HeaderLayout from './commons/HeaderLayout'
 import styled from 'styled-components'
 import uploadbutton from '../img/upload_button.png'
 

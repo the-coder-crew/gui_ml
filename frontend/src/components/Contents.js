@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderLayout from './HeaderLayout'
+import HeaderLayout from './commons/HeaderLayout'
 import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -15,7 +15,7 @@ const Button = styled.button`
 const P = styled.p`
     color: white;
     font-size: 1.5em;
-    width: 60%;
+    width: 70%;
     margin: 0.4em auto;
 `
 

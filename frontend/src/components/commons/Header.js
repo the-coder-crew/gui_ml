@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import backArrow from '../img/back_arrow.png'
+import backArrow from '../../img/back_arrow.png'
 
 const Div = styled.div`
     background-color: #4997F3;
