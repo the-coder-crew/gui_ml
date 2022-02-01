@@ -1,12 +1,14 @@
 import React from 'react'
-import Header from './Header'
+import HeaderLayout from './HeaderLayout'
 
 const Contents = () => {
 
     return (
-        <div>
-            <Header title="Contents" />
-        </div>
+        <HeaderLayout title="Contents">
+            <ul>
+                <li>Simple Linear Regression</li>
+            </ul>
+        </HeaderLayout>
     )
 }
 
