@@ -1,6 +1,5 @@
 import React from "react"
 import Header from "./Header"
-
 import { Row } from 'react-bootstrap'
 
 const HeaderLayout = props => {
