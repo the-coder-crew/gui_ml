@@ -1,0 +1,15 @@
+Home page
+
+Contents
+    - Simple linear regression
+
+Simple linear regression
+    - dataset/preprocessing
+    - visualize dataset
+    - split dataset
+    - training - gradient descent
+    - prediction - calculate mse
+
+Fonts:
+    - Title: Encode Sans SC
+    - Content: Josefin Sans
