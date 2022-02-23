@@ -7,6 +7,7 @@ const Div = styled.div`
     background-color: #4997F3;
     padding: 2em;
     display: flex;
+    width: 100%;
 `
 
 const H1 = styled.h1`

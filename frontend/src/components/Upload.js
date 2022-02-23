@@ -5,6 +5,7 @@ import uploadbutton from '../img/upload_button.png'
 import { Table } from 'react-bootstrap'
 
 import dataService from '../services/dataService'
+import PageLayout from './commons/PageLayout'
 
 const P = styled.p`
     font-size : 2em;
@@ -12,12 +13,11 @@ const P = styled.p`
 
 `
 const UploadButton = styled.button`
-    margin : auto;
+    
     background : #6eaffd;
     border : none;
     border-radius : 50%;
     padding : 1em;
-
 
 `
 const Upload = () => {
@@ -39,7 +39,7 @@ const Upload = () => {
     const showDataset = () => {
         if (!data) {
             return (
-                <div style={{textAlign : 'center'}}>
+                <div style={{margin : '10em 25em'}}>
                     <p style={{color : '#6eaffd',
                             fontSize : '1.5em',
                             marginBottom : '1.5em'}}>Load Dataset</p>
@@ -50,7 +50,7 @@ const Upload = () => {
             )
         } else {
             return (
-            <Table bordered hover variant="dark" responsive
+            <Table bordered hover responsive
                 style={{
                     margin: 'auto',
                     width: '50%',
@@ -68,10 +68,7 @@ const Upload = () => {
                 <tbody style={{ backgroundColor: '#ebf3f', }}>
                     {data.map((row, i) => {
                         return (
-                            <tr key={i} style={{
-                                borderStyle: 'solid',
-                                borderColor: 'black',
-                            }}>
+                            <tr key={i}>
                                 <td>{row.X}</td>
                                 <td>{row.y}</td>
                             </tr>
@@ -84,11 +81,11 @@ const Upload = () => {
 
     return (
         <HeaderLayout title="Simple Linear Regression">
-            
-                <P>Step 1 : Load the dataset</P>
                 
-                {showDataset()}
-            
+                    <P>Step 1 : Load the dataset</P>
+                
+                    {showDataset()}
+             
         </HeaderLayout>
     )
 }

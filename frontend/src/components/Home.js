@@ -8,14 +8,12 @@ import playButton from '../img/play_button.svg'
 const Div = styled.div`
     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url(${mlBg});
     background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
+    margin: 0 ;
+    padding: 0 ;
     width: 100%;
     height: 100vh;
     display: flex;
-    align-content: center;
-    justify-content: center;
+    
 `
 
 const ImgButton = styled.button`

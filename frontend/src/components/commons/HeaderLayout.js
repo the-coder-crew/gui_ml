@@ -5,7 +5,7 @@ import { Row } from 'react-bootstrap'
 const HeaderLayout = props => {
 
     return (
-        <div>
+        <div style={{width : '100%'}}>
             <Row lg="auto" md="auto" sm="auto">
                 <Header title={props.title} />
             </Row>
